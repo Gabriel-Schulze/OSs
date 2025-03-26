@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exportar div como PNG</title>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas"></script>
+</head>
+<body>
+    <div id="minhaDiv" style="width: 300px; height: 200px; background-color: lightblue; text-align: center;">
+        Este é o conteúdo da minha div!
+    </div>
+    <button id="salvar">Salvar como PNG</button>
+
+    <script>
+        document.getElementById("salvar").addEventListener("click", function() {
+            const div = document.getElementById("minhaDiv");
+            html2canvas(div).then(canvas => {
+                const link = document.createElement("a");
+                link.download = "minhaDiv.png";
+                link.href = canvas.toDataURL();
+                link.click();
+            });
+        });
+    </script>
+</body>
+</html>

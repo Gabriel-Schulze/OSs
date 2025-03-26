@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ordens de Serviço</title>
+</head>
+<body>
+    <main>
+        <div class="container-form">
+            <form action="">
+                <p class="container-inputNum">
+                    <label for="iNumOS">Numero da OS:</label>
+                    <input type="text" id="iNumOS" maxlength=7 pattern="\d{4}\/\d{2}" placeholder="0000/00">
+                    <label for="iNumCli">Num. cliente:</label>
+                    <input type="number" id="iNumCli">
+                </p>
+                <p>
+                    <label for="iNomeCli">Nome Cliente:</label>
+                    <input type="text" id="iNomeCli">
+                </p>
+                <p>
+                    <label for="iTrans">Transportadora:</label>
+                    <input type="text" id="iTrans" >
+                </p>
+                <p class="container-inputNum">
+                    <label for="iQtd">Quantidade:</label>
+                    <input type="number" id="iQtd" >
+                    <label for="iSobra">Sobra:</label>
+                    <input type="number" id="iSobra" >
+                </p>
+                <label>Quantidade de cores:</label>
+                <div class="container-cores">
+                    <p>
+                        <label for="iOuro">Ouro:</label>
+                        <input type="number" id="iOuro" >
+                    </p>
+                    <p>
+                        <label for="iPrata">Prata:</label>
+                        <input type="number" id="iPrata" >
+                    </p>
+                    <p>
+                        <label for="iBronze">Bronze:</label>
+                        <input type="number" id="iBronze" >
+                    </p>
+                    <p>
+                        <label for="iCobre">Cobre:</label>
+                        <input type="number" id="iCobre" >
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="container-preview">
+            <div class="container-imagem">
+                <img src="placeholder.png" class="imagem">
+            </div>
+            <div class="container-content">
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
